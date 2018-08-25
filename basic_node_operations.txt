@@ -1,0 +1,60 @@
+1. Run the commands sort, wc and uniq in commands.js file. Explain how they work and what the output was. 
+
+SORT: Below is the output from running this in terminal. It returns the contents of the file sorted alphabetically by line. 
+
+sort -u commands.js
+
+			break;
+			break; 
+			commandLibrary.cat(userInputArray.slice(1)); 
+			commandLibrary.echo(userInputArray.slice(1).join(" ")); 
+			done(data); 
+			if (err) throw err; 
+		//use readFile function from fs module to read the contents of fileName
+		case 'cat':
+		case 'echo':
+		const fileName = fullPath[0]; 
+		done(userInput); 
+		fs.readFile(fileName, (err, data) => {
+		}); 
+	'cat' : function(fullPath) {
+	'echo': function(userInput) {
+	//parses the user input to understand which command was typed 
+	const command = userInputArray[0]; 
+	const userInputArray = userInput.split(" "); 
+	process.stdout.write('\nprompt > '); 
+	process.stdout.write(output); 
+	switch (command) {
+	}
+	}, 
+//where we will store our commands 
+//where we will store the logic of our commands 
+//write out data 
+const commandLibrary = {
+const fs = require('fs'); 
+function done(output) {
+function evaluateCmd(userInput) {
+module.exports.commandLibrary = commandLibrary; 
+module.exports.evaluateCmd = evaluateCmd; 
+}
+}; 
+
+WC: It returns the lines, words, and characters (respectively) in the commands.js file. 
+
+     41     114    1003 commands.js
+
+UNIQ: Returns only the unique lines in the file, so in this case, it returned all of the contents of the file since all lines are unique. If there's a repeat line in the file, it will omit it from the output. 
+
+2. Using the pipe (|) connect at least two commands and run it on commands.js. Explain what the output was and why the specific data was outputted.  
+
+sort commands.js | uniq 
+
+The output was sorted alphabetically by line, and then with the uniq command printed all of the lines of the file since all are unique. To make sure this worked, I added an additional repeat line to the file and ran it with this and no repeated lines were in the output. 
+
+6. 
+var reverseString = (inputString) => {
+  var splitStringArray = inputString.split(''); 
+  var reversedArray = splitStringArray.reverse(); 
+  console.log(reversedArray); 
+  
+}
